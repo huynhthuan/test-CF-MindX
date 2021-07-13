@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa&display=swap');
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    font-family: 'Lexend Exa', sans-serif;
+}
+
+#do-shorten {
+    position: relative;
+}
+
+#do-shorten img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 34px;
+    height: 34px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#do-shorten::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #198754d4;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#do-shorten.active img,
+#do-shorten.active::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.result-link {
+    font-weight: bold;
+    font-size: 30px;
+    color: teal;
+}
+
+.btn {
+    border: 2px solid transparent;
+}
+
+.btn-check:active + .btn-secondary,
+.btn-check:checked + .btn-secondary,
+.btn-secondary.active,
+.btn-secondary:active,
+.show > .btn-secondary.dropdown-toggle {
+    border: 2px solid black;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background: #eaeaee;
+    color: black;
+}
+
+.box-shorten-link {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 15px;
+    border-radius: 20px;
+}

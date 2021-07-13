@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test CF</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 mx-auto">
+                <div class="box-shorten-link">
+                    <h4 class="text-center mb-3">Nhập link cần rút gọn</h4>
+                    <div class="shorten-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="link-must-shorten"
+                                placeholder="Link cần rút gọn. Ví dụ: example.org/very/long/link.html">
+                        </div>
+                        <p class="text-center fw-bold">Chọn tên miền cho link rút gọn</p>
+                        <div class="mb-3 d-flex justify-content-center">
+                            <input type="radio" class="btn-check" name="options" id="option1" value="shrtco.de"
+                                autocomplete="off" checked>
+                            <label class="btn btn-secondary me-2 ms-2" for="option1">shrtco.de</label>
+
+                            <input type="radio" class="btn-check" name="options" id="option2" value="9qr.de"
+                                autocomplete="off">
+                            <label class="btn btn-secondary me-2 ms-2" for="option2">9qr.de</label>
+
+                            <input type="radio" class="btn-check" name="options" id="option3" value="shiny.link"
+                                autocomplete="off">
+                            <label class="btn btn-secondary me-2 ms-2" for="option3">shiny.link</label>
+                        </div>
+                        <hr>
+                        <div class="mb-3 text-center">
+                            <button class="btn btn-success mx-auto" id="do-shorten">
+                                Rút gọn link
+                                <img src="./loading.gif" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
